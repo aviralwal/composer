@@ -2,7 +2,6 @@
 
 Perform all the steps in a single terminal window
 
-(Assuming repo is cloned into home directory and installation has been done as speciified [here](https://hyperledger.github.io/composer/installing/development-tools.html))
 
 ## To initialise fabric
 These steps will download latest fabric docker images(if not already done), initialize the fabric blockchain and create a composer profile on the fabric blockchain(if not already done or if the fabric has been teardown)
