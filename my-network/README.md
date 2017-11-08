@@ -7,7 +7,7 @@ Perform all the steps in a single terminal window
 These steps will download latest fabric docker images(if not already done), initialize the fabric blockchain and create a composer profile on the fabric blockchain(if not already done or if the fabric has been teardown)
 ```sh
 export FABRIC_VERSION=hlfv1
-cd ~/hyperledger/composer/fabric-tools
+cd fabric-tools
 ./downloadFabric.sh
 ./startFabric.sh
 ./createComposerProfile.sh
@@ -15,19 +15,19 @@ cd ~/hyperledger/composer/fabric-tools
 
 ## Go to my-network
 ```sh
-cd ~/hyperledger/composer/my-network
+cd my-network
 ```
 
 ## Create Business Network Archive File
-current directory `~/hyperledger/composer/my-network`
+current directory `my-network`
 ```sh
 npm install
 ```
 
 ## Deploy the business network definition on the fabric blockchain
-current directory `~/hyperledger/composer/my-network`
+current directory `my-network`
 ```sh
-composer network deploy -a ./dist/my-network.bna -p hlfv1 -i PeerAdmin -s randomString
+composer network deploy -a dist/my-network.bna -p hlfv1 -i PeerAdmin -s randomString
 ```
 
 To check whether the .bna is successfully deployed, run
@@ -41,7 +41,7 @@ The connection to the network was successfully tested: my-network
 Command succeeded
 ```
 ## To generate Rest server
-Current directory `~/hyperledger/composer/my-network` 
+Current directory `my-network` 
 
 Run
 ```sh
@@ -74,7 +74,7 @@ Close the rest server with `Ctrl+C`
 
 ## To start the Application
 
-Current directory `~/hyperledger/composer/my-network`
+Current directory `my-network`
 
 ```sh
 cd angularApp
